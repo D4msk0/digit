@@ -17,8 +17,7 @@ public class DigitController {
     public String processDigit(@RequestParam(name = "digit") int digit, Model model) {
         System.out.println("Received digit: " + digit);
         model.addAttribute("digit", digit);
-        return "digit-result";
+//        return "digit-result";
+        return "digit-form";
     }
-
-
 }
